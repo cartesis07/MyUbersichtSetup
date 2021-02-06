@@ -6,7 +6,7 @@ command: "netstat -w1 -I en0 | head -3 | awk '{print $3,$6}' | tail -1"
 
 # Even though the command takes longer than 1 second to execute, 1000ms
 # seems to work best (widget output updates approx every 3 seconds)
-refreshFrequency: 5000
+refreshFrequency: 3000
 
 style: """
   bottom: 30px

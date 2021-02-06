@@ -2,7 +2,7 @@ settings:
   history: false
 
 command: "cpumeter.widget/ubercpumeter.rb"
-refreshFrequency: 5000
+refreshFrequency: 500
 
 render: (output) -> """
   <h1>CPU</h1>
