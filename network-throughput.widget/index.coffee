@@ -6,7 +6,7 @@ command: "netstat -w1 -I en0 | head -3 | awk '{print $3,$6}' | tail -1"
 
 # Even though the command takes longer than 1 second to execute, 1000ms
 # seems to work best (widget output updates approx every 3 seconds)
-refreshFrequency: 3000
+refreshFrequency: 5000
 
 style: """
   top: 450px
@@ -59,8 +59,8 @@ style: """
 render: -> """
   <table>
   <tr>
-    <td class='col1'><div class='wrapper'>0.00 KB/s<div class='label'>IN</div></div></td>
-    <td class='col2'><div class='wrapper'>0.00 KB/s<div class='label'>OUT</div></div></td>
+    <td class='col1'><div class='wrapper'>0.00 KB/s<div class='label'>DOWN</div></div></td>
+    <td class='col2'><div class='wrapper'>0.00 KB/s<div class='label'>UP</div></div></td>
   </tr>
   </table>
 """
@@ -93,5 +93,5 @@ update: (output, domEl) ->
       "<div class='label'>#{type}</div>" +
     "</div>"
 
-  table.find(".col1").html renderBytes(result[0], 'IN', true)
-  table.find(".col2").html renderBytes(result[1], 'OUT', true)
+  table.find(".col1").html renderBytes(result[0], 'DOWNLOAD', true)
+  table.find(".col2").html renderBytes(result[1], 'UPLOAD', true)
