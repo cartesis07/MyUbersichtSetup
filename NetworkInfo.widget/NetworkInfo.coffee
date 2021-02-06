@@ -60,6 +60,7 @@ style: """
   border:1px solid rgba(#fff, .25)
   border-radius:10px
 
+
   .service
     text-align:center
     padding:2px
@@ -67,6 +68,7 @@ style: """
   .icon
     height:32px
     width:32px
+    filter:invert(1)
 
   .primaryInfo, .secondaryInfo
     font-family: Helvetica Neue
