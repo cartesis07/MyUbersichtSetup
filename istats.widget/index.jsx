@@ -40,7 +40,7 @@ const config = {
     tempUnit: 'C',
     /* Widget position (absolute) */
     top: '800px',
-    left: '1050px',
+    left: '1070px',
     /* Stat position */
     width: '125',
     height: '60',
