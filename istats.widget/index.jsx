@@ -63,7 +63,7 @@ export const command = '/usr/local/bin/istats';
 /**
  * Widget refresh frequency in milliseconds
  */
-export const refreshFrequency = 5000;
+export const refreshFrequency = 1000;
 
 export const className = `
     width: 100%;
