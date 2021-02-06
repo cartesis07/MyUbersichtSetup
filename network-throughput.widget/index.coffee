@@ -9,7 +9,7 @@ command: "netstat -w1 -I en0 | head -3 | awk '{print $3,$6}' | tail -1"
 refreshFrequency: 5000
 
 style: """
-  top: 450px
+  bottom: 30px
   left: 15px
   color: #fff
   font-family: Helvetica Neue
@@ -47,10 +47,10 @@ style: """
     font-weight: normal
   
   .col1
-    background: rgba(#f00, 0.4)
+    background: rgba(#f00, 0)
   
   .col2
-    background: rgba(#0ff, 0.4)
+    background: rgba(#0ff, 0)
 
   .hidden
     display: none
