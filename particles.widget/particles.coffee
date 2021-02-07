@@ -5,7 +5,7 @@ opts =
   # Particle colors
   colors:  ["#fffb96", "#f47cd4", "#01cdfe"] # a e s t h e t i c
 
-  speed: 100
+  speed: 120
 
   # How often the particles change direction. (0.0 - 1.0)
   wander: 0.8
@@ -58,7 +58,7 @@ update: (output, domEl) ->
 
     # Don't waste precious power
     batt = parseInt(output.split("%")[0])
-    if batt > 99
+    if batt > 15
       this.particles.start()
     else
       this.particles.stop()
@@ -69,7 +69,7 @@ style: """
   height: 100%
   margin: 0
   padding: 0
-  z-index: 10
+  z-index: 1000
 """
 
 
