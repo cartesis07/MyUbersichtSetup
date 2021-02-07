@@ -3,7 +3,7 @@
 
 opts =
   # Particle colors
-  colors:  ["#fffb96", "#f47cd4", "#01cdfe"] # a e s t h e t i c
+  colors:  ["#ff0000", "#ff6666", "#6b0000"] # a e s t h e t i c
 
   speed: 120
 
@@ -14,7 +14,7 @@ opts =
   flicker: 0.5
 
   # Number of particles
-  number: 50
+  number: 100
 
   # Distance at which particles are close enough to glow
   range: 200
@@ -73,4 +73,4 @@ style: """
 """
 
 
-refreshFrequency: 10000
+refreshFrequency: 1000
